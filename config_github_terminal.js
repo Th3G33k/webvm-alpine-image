@@ -1,15 +1,15 @@
 // The root filesystem location
 export const diskImageUrl = IMAGE_URL;
 // The root filesystem backend type
-export const diskImageType = "cloud";
+export const diskImageType = "github";
 // Print an introduction message about the technology
 export const printIntro = false;
 // Is a graphical display needed
 export const needsDisplay = true;
 // Executable full path (Required)
-export const cmd = "/sbin/init"; // prev: CMD; // Default: "/bin/bash";
+export const cmd = CMD; // Default: "/bin/bash";
 // Arguments, as an array (Required)
-export const args = []; // ARGS; // Default: ["--login"];
+export const args = ARGS; // Default: ["--login"];
 // Optional extra parameters
 export const opts = {
 	// Environment variables
@@ -17,7 +17,7 @@ export const opts = {
 	// Current working directory
 	cwd: CWD, // Default: "/home/user",
 	// User id
-	uid: 0, // prev: 1000
+	uid: 1000,
 	// Group id
-	gid: 0 // prev: 1000
+	gid: 1000
 };
