@@ -1,7 +1,7 @@
 // The root filesystem location
 export const diskImageUrl = IMAGE_URL;
 // The root filesystem backend type
-export const diskImageType = "github";
+export const diskImageType = "cloud";
 // Print an introduction message about the technology
 export const printIntro = false;
 // Is a graphical display needed
