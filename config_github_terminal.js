@@ -3,11 +3,11 @@ export const diskImageUrl = IMAGE_URL;
 // The root filesystem backend type
 export const diskImageType = "github";
 // Print an introduction message about the technology
-export const printIntro = true;
+export const printIntro = false; // previous: CMD;
 // Is a graphical display needed
-export const needsDisplay = false;
+export const needsDisplay = true; // previous: false;
 // Executable full path (Required)
-export const cmd = CMD; // Default: "/bin/bash";
+export const cmd = "/sbin/init"; // previous: CMD; // Default: "/bin/bash";
 // Arguments, as an array (Required)
 export const args = ARGS; // Default: ["--login"];
 // Optional extra parameters
@@ -17,7 +17,7 @@ export const opts = {
 	// Current working directory
 	cwd: CWD, // Default: "/home/user",
 	// User id
-	uid: 1000,
+	uid: 0, // previous: 1000
 	// Group id
-	gid: 1000
+	gid: 0 // previous: 1000
 };
