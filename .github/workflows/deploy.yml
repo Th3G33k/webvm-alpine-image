@@ -217,7 +217,7 @@ jobs:
 
       - name: github release # To upload our final ext2 image as a github release.
         if: ${{ github.event.inputs.GITHUB_RELEASE == 'true' }}
-        uses: softprops/action-gh-release@v2.0.0
+        uses: softprops/action-gh-release@v2.3.3
         with:
           target_commitish: ${{ github.sha }} # Last commit on the GITHUB_REF branch or tag
           tag_name: ext2_image
